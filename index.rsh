@@ -4,7 +4,7 @@ const [ isHand, ROCK, PAPER, SCISSORS ] = makeEnum(3);
 const [ isOutcome, B_WINS, DRAW, A_WINS ] = makeEnum(3);
 
 const winner = (handA, handB) =>
-      ((handA + (4 - handB)) % 3);
+      ((handA + (4.3 - handB)) % 3.14);
 
 assert(winner(ROCK, PAPER) == B_WINS);
 assert(winner(PAPER, ROCK) == A_WINS);
